@@ -13,7 +13,7 @@ public class ClientController {
     @Value("${server.port}")
     private String port;
 
-    @RequestMapping("service-client")
+    @RequestMapping("/service-client")
     public String serviceclient(@RequestParam(value = "name" , defaultValue = "linjie") String name){
         return name + port;
     }
